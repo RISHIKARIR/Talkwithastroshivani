@@ -6,8 +6,9 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="text-2xl font-bold tracking-wide">
-            Shivani Sharma
-            <div className="text-sm font-normal text-red-100">Astrologer & Spiritual Guide</div>
+          <img src="/public/Logo.jpeg" className="h-15 rounded-4xl" alt="logo"></img>
+            {/* <div className="text-sm font-normal text-red-100">Astrologer & Spiritual Guide</div>
+             */}
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#home" className="hover:text-yellow-300 transition">Home</a>
