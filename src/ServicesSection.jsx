@@ -6,35 +6,35 @@ const services = [
     title: "Astrology Consultation",
     description: "Complete horoscope reading and life predictions",
     price: "₹5100",
-    image: "/public/Astrology-Consultation.webp"
+    image: "/Astrology-Consultation.webp"
   },
   {
     icon: Calculator,
     title: "Numerology Consultation",
     description: "Discover your life path through numbers",
     price: "₹5100",
-    image: "/public/numerology.avif"
+    image: "/numerology.avif"
   },
   {
     icon: Home,
     title: "Vastu",
     description: "Harmonize your space with ancient wisdom",
     price: "51,000",
-    image: "/public/vastu.webp"
+    image: "/vastu.webp"
   },
   {
     icon: Hand,
     title: "Palmistry",
     description: "Read your destiny through palm lines",
     price: "₹3100",
-    image: "/public/palmistry.jpg"
+    image: "/palmistry.jpg"
   },
   {
     icon: Sparkles,
     title: "Akashic Record Reading",
     description: "Access your soul's eternal wisdom",
     price: "₹61000",
-    image: "/public/akshic.jpg"
+    image: "/akshic.jpg"
   }
 ];
 
