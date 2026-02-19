@@ -9,17 +9,17 @@ import "swiper/css/pagination";
 
 const carouselImages = [
   {
-    url: "/public/heroimg1.jpeg",
+    url: "/heroimg1.jpeg",
     // title: "Professional Astrologer",
     // subtitle: "Guiding Your Destiny with Ancient Wisdom",
   },
   {
-    url: "/public/heroimg2.jpeg",
+    url: "/heroimg2.jpeg",
     // title: "Vedic Astrology",
     // subtitle: "Traditional Wisdom for Modern Life",
   },
   {
-    url: "/public/heroimg3.jpeg",
+    url: "/heroimg3.jpeg",
     // title: "Cosmic Guidance",
     // subtitle: "Navigate Life's Journey with Clarity",
   },
