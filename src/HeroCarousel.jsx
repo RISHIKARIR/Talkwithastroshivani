@@ -9,19 +9,19 @@ import "swiper/css/pagination";
 
 const carouselImages = [
   {
-    url: "https://images.unsplash.com/photo-1719500495894-980ced7a4c1d?q=80&w=1200",
-    title: "Professional Astrologer",
-    subtitle: "Guiding Your Destiny with Ancient Wisdom",
+    url: "/public/heroimg1.jpeg",
+    // title: "Professional Astrologer",
+    // subtitle: "Guiding Your Destiny with Ancient Wisdom",
   },
   {
-    url: "https://images.unsplash.com/photo-1725483733290-134e28219b8e?q=80&w=1200",
-    title: "Vedic Astrology",
-    subtitle: "Traditional Wisdom for Modern Life",
+    url: "/public/heroimg2.jpeg",
+    // title: "Vedic Astrology",
+    // subtitle: "Traditional Wisdom for Modern Life",
   },
   {
-    url: "https://images.unsplash.com/photo-1532968787238-51611422cb5b?q=80&w=1200",
-    title: "Cosmic Guidance",
-    subtitle: "Navigate Life's Journey with Clarity",
+    url: "/public/heroimg3.jpeg",
+    // title: "Cosmic Guidance",
+    // subtitle: "Navigate Life's Journey with Clarity",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function HeroCarousel() {
           nextEl: ".hero-next",
         }}
         loop
-        className="h-[500px] md:h-[600px]"
+        className="h-140  md:h-200"
       >
         {carouselImages.map((item, index) => (
           <SwiperSlide key={index}>

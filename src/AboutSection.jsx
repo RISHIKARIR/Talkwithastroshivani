@@ -15,15 +15,15 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <img
+            {/* <img
               src="https://images.unsplash.com/photo-1719500495894-980ced7a4c1d?q=80&w=1080"
               alt="Shivani Sharma"
               className="w-full rounded-lg shadow-2xl"
-            />
+            /> */}
           </div>
 
           <div>
-            <h2 className="text-4xl mb-6 text-red-900">
+            <h2 className="text-4xl font-medium mb-6 text-red-900">
               About Shivani Sharma
             </h2>
 

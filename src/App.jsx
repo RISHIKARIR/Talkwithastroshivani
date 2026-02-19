@@ -14,11 +14,12 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <HeroCarousel />
+      <AboutSection />
       <ServicesSection />
       <MediaSection />
       <PodcastSection />
       <TestimonialsSection />
-      <AboutSection />
+      
       <Footer />
     </div>
   );

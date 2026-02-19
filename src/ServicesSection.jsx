@@ -5,36 +5,36 @@ const services = [
     icon: Star,
     title: "Astrology Consultation",
     description: "Complete horoscope reading and life predictions",
-    price: "₹2,500",
-    image: "https://images.unsplash.com/photo-1532968787238-51611422cb5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    price: "₹5100",
+    image: "/public/Astrology-Consultation.webp"
   },
   {
     icon: Calculator,
     title: "Numerology Consultation",
     description: "Discover your life path through numbers",
-    price: "₹2,000",
-    image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    price: "₹5100",
+    image: "/public/numerology.avif"
   },
   {
     icon: Home,
     title: "Vastu",
     description: "Harmonize your space with ancient wisdom",
-    price: "₹3,000",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    price: "51,000",
+    image: "/public/vastu.webp"
   },
   {
     icon: Hand,
     title: "Palmistry",
     description: "Read your destiny through palm lines",
-    price: "₹1,500",
-    image: "https://images.unsplash.com/photo-1617791160505-6f00504e3519?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    price: "₹3100",
+    image: "/public/palmistry.jpg"
   },
   {
     icon: Sparkles,
     title: "Akashic Record Reading",
     description: "Access your soul's eternal wisdom",
-    price: "₹4,000",
-    image: "https://images.unsplash.com/photo-1717677977177-c9577c04cf27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    price: "₹61000",
+    image: "/public/akshic.jpg"
   }
 ];
 
@@ -43,7 +43,7 @@ export default function ServicesSection() {
     <section id="services" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl mb-4 text-red-900">Our Services</h2>
+          <h2 className="text-4xl font-semibold mb-4 text-red-900">Our Services</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Comprehensive spiritual services tailored to guide you through life's journey
           </p>
@@ -61,7 +61,7 @@ export default function ServicesSection() {
                   <img 
                     src={service.image} 
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover "
                   />
                 </div>
                 <div className="p-6">
