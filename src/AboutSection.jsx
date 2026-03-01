@@ -28,15 +28,14 @@ export default function AboutSection() {
             </h2>
 
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              With over 20 years of experience in Vedic astrology, Shivani Sharma
-              has guided thousands of individuals towards a better understanding
-              of their life's purpose.
+             Shivani — The Art of Elite Astrological Mastery
+Shivani represents a refined and modern approach to Indian astrology — where ancient wisdom meets strategic life guidance. With over 9 years of professional expertise, she offers more than consultations; she delivers clarity engineered through cosmic intelligence.
+Trusted by a growing community of 79K+ followers on Instagram and 62.1K+ subscribers on YouTube, Shivani has positioned herself as a respected voice in digital astrology — known for accuracy, depth, and ethical responsibility.
+Her sessions are highly personalized and insight-driven, carefully analyzing planetary dynamics, behavioral patterns, and timing cycles to provide decisive, results-oriented guidance. Each consultation is designed for individuals who value precision, discretion, and transformative direction.
+For those who seek not just predictions — but power, positioning, and progress — Shivani offers a premium astrological experience rooted in awareness and elevated decision-making.
             </p>
 
-            <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-              A renowned astrologer, author, and spiritual guide, she has been
-              featured on numerous television channels and publications.
-            </p>
+          
 
             <h3 className="text-2xl mb-4 text-red-900">
               Areas of Expertise
