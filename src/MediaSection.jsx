@@ -33,6 +33,7 @@ export default function MediaSection() {
                   src={channel.image} 
                   alt={channel.name}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-xl text-red-900 mb-4">{channel.name}</h3>
