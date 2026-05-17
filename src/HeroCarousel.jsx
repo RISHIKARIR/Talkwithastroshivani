@@ -102,7 +102,7 @@ export default function HeroCarousel() {
                     <div className="mt-7 flex flex-wrap gap-3">
                       <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white backdrop-blur-md">
                         <Star className="h-4 w-4 fill-yellow-300 text-yellow-300" />
-                        10+ Years Experience
+                        5+ Years Experience
                       </div>
 
                       <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-white backdrop-blur-md">
