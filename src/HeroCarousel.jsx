@@ -64,7 +64,7 @@ export default function HeroCarousel() {
           [&_.swiper-pagination-bullet-active]:!w-8
           [&_.swiper-pagination-bullet-active]:!rounded-full
           [&_.swiper-pagination-bullet-active]:!bg-yellow-400
-          [&_.swiper-pagination-bullet-active]:!opacity-100
+          
         "
       >
         {carouselImages.map((item, index) => (
@@ -151,7 +151,7 @@ export default function HeroCarousel() {
               </div>
 
               {/* Mobile Image Glow */}
-              <div className="absolute bottom-0 right-0 z-0 block h-[360px] w-[280px] opacity-30 lg:hidden">
+              <div className="absolute bottom-0 right-0 z-0 block h-full w-full opacity-30 lg:hidden">
                 <img
                   src={item.url}
                   alt=""
