@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 
 const carouselImages = [
   {
-    url: "/heroimg1.jpeg",
+    url: "/carsoual1.png",
     title: "Unlock Your Future With Vedic Astrology",
     subtitle:
       "Personalized horoscope, kundli reading, love, career, marriage and life guidance by an experienced astrologer.",
@@ -30,7 +30,7 @@ const carouselImages = [
     tag: "Kundli • Vastu • Numerology",
   },
   {
-    url: "/heroimg3.jpeg",
+    url: "/carsoual2.png",
     title: "Find Clarity In Love, Career & Marriage",
     subtitle:
       "Receive meaningful guidance for important life decisions with accurate and confidential consultations.",

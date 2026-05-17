@@ -24,7 +24,7 @@ const expertise = [
 const stats = [
   {
     icon: Star,
-    value: "9+",
+    value: "5+",
     label: "Years Experience",
   },
   {
@@ -69,9 +69,9 @@ export default function AboutSection() {
               <div className="relative rounded-[40px] bg-[#5b1d0d] p-3 shadow-2xl">
                 <div className="overflow-hidden rounded-[32px] bg-white">
                   <img
-                    src="https://images.unsplash.com/photo-1719500495894-980ced7a4c1d?q=80&w=1080"
+                    src="about-image.png"
                     alt="Shivani Sharma - Professional Astrologer"
-                    className="h-[520px] w-full object-cover object-center"
+                    className=" w-full object-cover object-center"
                     loading="lazy"
                   />
                 </div>
@@ -103,7 +103,7 @@ export default function AboutSection() {
               </div>
 
               {/* Floating trust card */}
-              <div className="absolute -right-4 top-12 hidden rounded-[26px] border border-orange-200 bg-white px-5 py-4 shadow-xl lg:block">
+              {/* <div className="absolute -right-4 top-12 hidden rounded-[26px] border border-orange-200 bg-white px-5 py-4 shadow-xl lg:block">
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-100 text-orange-600">
                     <Users className="h-6 w-6" />
@@ -116,7 +116,7 @@ export default function AboutSection() {
                     </h4>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Content Side */}

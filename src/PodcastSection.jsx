@@ -15,11 +15,11 @@ import "swiper/css/navigation";
 const videos = [
   {
     id: "bM2ZoE_ngno",
-    url: "https://youtu.be/bM2ZoE_ngno?si=vQtIWjC04yxmlQOK",
-    title: "May Horoscope 2026 | May Rashifal",
+    url: "https://youtu.be/f5xMHZNOoSg?si=6S3zahuI8m3jKU20",
+    title: "Family Guru Show | Rashifal",
     description:
-      "Discover May 2026 horoscope predictions, remedies, career insights, love guidance and important planetary movements.",
-    duration: "1:37:40",
+      "Discover Family Guru horoscope predictions, remedies, career insights, love guidance and important planetary movements.",
+    duration: "10:11",
     tag: "Yearly Horoscope",
   },
   {
@@ -53,9 +53,9 @@ const videos = [
 
 const tabs = [
   "Yearly Horoscope 2026",
-  "Learn Astrology",
-  "Planetary Transits",
-  "Spiritual Guidance",
+  // "Learn Astrology",
+  // "Planetary Transits",
+  // "Spiritual Guidance",
 ];
 
 export default function PodcastSection() {
