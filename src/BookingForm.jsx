@@ -10,7 +10,7 @@ export default function BookingForm({
     name: "",
     whatsapp: "",
   });
-
+const [loading, setLoading] = useState(false);
   useEffect(() => {
     if (!isOpen) return;
 
@@ -36,19 +36,37 @@ export default function BookingForm({
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    if (!formData.name || !formData.whatsapp) {
-      alert("Please enter your name and WhatsApp number.");
+  if (!formData.name || !formData.whatsapp) {
+    alert("Please enter your name and WhatsApp number.");
+    return;
+  }
+
+  try {
+    setLoading(true);
+
+    const response = await fetch(import.meta.env.VITE_FORMSPREE_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        whatsapp: formData.whatsapp,
+        selectedService: selectedService || "Not selected",
+        subject: "New Consultation Booking Request",
+      }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      alert(data?.errors?.[0]?.message || "Something went wrong. Please try again.");
       return;
     }
-
-    console.log({
-      name: formData.name,
-      whatsapp: formData.whatsapp,
-      service: selectedService,
-    });
 
     alert("Thank you! We will contact you shortly.");
 
@@ -58,7 +76,13 @@ export default function BookingForm({
     });
 
     onClose();
-  };
+  } catch (error) {
+    console.log(error);
+    alert("Failed to submit request. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div
@@ -138,13 +162,14 @@ export default function BookingForm({
               </div>
             </div>
 
-            <button
-              type="submit"
-              className="flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 px-6 py-4 font-bold text-red-950 shadow-lg shadow-yellow-500/20 transition hover:-translate-y-1 hover:shadow-yellow-500/40"
-            >
-              Submit Request
-              <Send className="h-5 w-5" />
-            </button>
+          <button
+  type="submit"
+  disabled={loading}
+  className="flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 px-6 py-4 font-bold text-red-950 shadow-lg shadow-yellow-500/20 transition hover:-translate-y-1 hover:shadow-yellow-500/40 disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
+>
+  {loading ? "Submitting..." : "Submit Request"}
+  <Send className="h-5 w-5" />
+</button>
           </form>
         </div>
       </div>

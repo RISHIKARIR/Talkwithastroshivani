@@ -38,7 +38,16 @@ const carouselImages = [
   },
 ];
 
-export default function HeroCarousel() {
+export default function HeroCarousel({onBookingClick }) {
+   const handleViewServices = () => {
+    document.getElementById("services")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+  
+
   return (
     <section id="home" className="relative overflow-hidden bg-[#180707]">
       <Swiper
@@ -117,14 +126,22 @@ export default function HeroCarousel() {
                     </div>
 
                     <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-                      <button className="rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 px-8 py-4 text-base font-semibold text-[#2b0909] shadow-[0_15px_40px_rgba(245,158,11,0.35)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(245,158,11,0.45)]">
-                        Book Consultation
-                      </button>
+        <button
+          type="button"
+          onClick={onBookingClick}
+          className="rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 px-8 py-4 text-base font-semibold text-[#2b0909] shadow-[0_15px_40px_rgba(245,158,11,0.35)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(245,158,11,0.45)]"
+        >
+          Book Consultation
+        </button>
 
-                      <button className="rounded-full border border-white/30 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur-md transition hover:-translate-y-1 hover:bg-white hover:text-[#3d0b0b]">
-                        View Services
-                      </button>
-                    </div>
+        <button
+          type="button"
+          onClick={handleViewServices}
+          className="rounded-full border border-white/30 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur-md transition hover:-translate-y-1 hover:bg-white hover:text-[#3d0b0b]"
+        >
+          View Services
+        </button>
+      </div>
                   </div>
 
                   {/* Proper Visible Image */}

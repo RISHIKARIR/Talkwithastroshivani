@@ -26,32 +26,39 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation onBookingClick={() => openBooking()} />
+
       <main>
         <section id="home">
-          <HeroCarousel />
+          <HeroCarousel onBookingClick={() => openBooking()} />
         </section>
+
         <section id="about">
           <AboutSection />
         </section>
+
         <section id="services">
           <ServicesSection onBookingClick={openBooking} />
         </section>
+
         <section>
           {/* <MediaSection /> */}
         </section>
+
         <section>
           <PodcastSection />
         </section>
+
         <section>
           <TestimonialsSection />
         </section>
       </main>
+
       <Footer onBookingClick={() => openBooking()} />
-      
-      <BookingForm 
-        isOpen={isBookingOpen} 
+
+      <BookingForm
+        isOpen={isBookingOpen}
         onClose={closeBooking}
-        service={selectedService}
+        selectedService={selectedService}
       />
     </div>
   );
