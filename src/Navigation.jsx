@@ -56,11 +56,11 @@ export default function Navigation({ onBookingClick = () => {} }) {
           {/* Right Section */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:+919876543210"
+              href="tel:+919911552153"
               className="hidden items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md transition hover:border-yellow-400/50 hover:text-yellow-300 lg:flex"
             >
               <Phone className="h-4 w-4" />
-              +91 98765 43210
+              +91 9911552153
             </a>
 
             <button
@@ -105,11 +105,11 @@ export default function Navigation({ onBookingClick = () => {} }) {
               ))}
 
               <a
-                href="tel:+919319622331"
+                href="tel:+919911552153"
                 className="mt-2 flex items-center gap-2 rounded-2xl bg-white/10 px-4 py-3 text-sm font-medium text-yellow-200"
               >
                 <Phone className="h-4 w-4" />
-                +91 9319622331
+                +91 9911552153
               </a>
             </div>
           </div>

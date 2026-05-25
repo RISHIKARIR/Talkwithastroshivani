@@ -171,27 +171,27 @@ export default function Footer({ onBookingClick = () => {} }) {
 
             <div className="space-y-4">
               <a
-                href="tel:+919876543210"
+                href="tel:+919911552153"
                 className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-yellow-400/40 hover:bg-white/10"
               >
                 <Phone className="mt-1 h-5 w-5 shrink-0 text-yellow-300" />
                 <div>
                   <p className="text-sm font-semibold text-white">Call Us</p>
                   <p className="mt-1 text-sm text-white/70">
-                    +91 9319622331
+                    +91 9911552153
                   </p>
                 </div>
               </a>
 
               <a
-                href="mailto:info@shivanisharma.com"
+                href="mailto:talkwithastroshivanisharma.com"
                 className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-yellow-400/40 hover:bg-white/10"
               >
                 <Mail className="mt-1 h-5 w-5 shrink-0 text-yellow-300" />
                 <div>
                   <p className="text-sm font-semibold text-white">Email</p>
                   <p className="mt-1 text-sm text-white/70">
-                    info@shivanisharma.com
+                    talkwithastroshivanisharma.com
                   </p>
                 </div>
               </a>
@@ -201,7 +201,7 @@ export default function Footer({ onBookingClick = () => {} }) {
                 <div>
                   <p className="text-sm font-semibold text-white">Location</p>
                   <p className="mt-1 text-sm leading-6 text-white/70">
-                    New Delhi, India
+                    3828 Gali No 8,Kanhiya Nagar,Main road,New Delhi-110035
                     <br />
                     Online Consultation Available
                   </p>
