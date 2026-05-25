@@ -24,7 +24,7 @@ const expertise = [
 const stats = [
   {
     icon: Star,
-    value: "5+",
+    value: "9+",
     label: "Years Experience",
   },
   {
